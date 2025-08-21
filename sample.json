@@ -1,0 +1,9 @@
+{
+	"aqi": 82,
+	"pm25": 22.5,
+	"pm10": 35.1,
+	"temperature": 24.3,
+	"humidity": 44,
+	"updatedAt": "2024-08-21T10:00:00.000Z",
+	"source": "sample"
+} 
