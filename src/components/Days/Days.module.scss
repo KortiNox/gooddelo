@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.days {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: $border-radius;
+  background: $color-black;
+  padding: 54rem 20rem 35rem;
+
+  &__count {
+    color: $color-white;
+    font-size: 55rem;
+    letter-spacing: -0.06rem;
+    font-weight: 500;
+  }
+
+  @media (max-width: 1440px) {
+    padding: 20rem;
+  }
+
+  @media (max-width: 1024px) {
+    height: 485rem;
+    width: 100%;
+  }
+
+  @media (max-width: 576px) {
+    min-height: 355rem;
+    border-radius: 0;
+    padding: 40rem;
+  }
+}

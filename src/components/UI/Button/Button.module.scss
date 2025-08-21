@@ -1,0 +1,41 @@
+@import '../../../styles/variables.scss';
+
+.button {
+  border: none;
+  padding: 15rem 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 100rem;
+  cursor: pointer;
+  font-size: 25rem;
+  font-weight: 500;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 35rem;
+  }
+
+  &:hover {
+    outline: 1rem solid $color-white;
+    background: $color-black;
+    color: $color-white;
+  }
+
+  &:focus-visible {
+    outline: 2rem solid $color-black;
+    outline-offset: 2rem;
+  }
+}
+
+.primary {
+  background: $color-white;
+}
+
+.secondary {
+  background: $color-black;
+  outline: 1rem solid $color-white;
+}

@@ -1,0 +1,117 @@
+.landing {
+  margin: 20rem 0;
+
+  &__title {
+    font-size: 37rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 10rem;
+    margin-bottom: 30rem;
+  }
+
+  &__container {
+    gap: 40rem;
+
+    width: 100%;
+    max-width: 1880rem;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 3fr;
+    grid-template-rows: 1.3fr 1fr;
+
+    padding: 0 20rem;
+    height: 920rem;
+    max-height: 920rem;
+
+    @media (max-width: 1440px) {
+      height: 920rem;
+      max-height: 920rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1.25fr repeat(2, 1fr);
+    }
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+      max-height: none;
+      height: auto;
+    }
+    @media (max-width: 576px) {
+      gap: 0;
+      padding: 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1.5fr repeat(2, 0.85fr);
+
+      height: fit-content;
+      max-height: none;
+    }
+  }
+}
+
+.landing__1 {
+  grid-area: 1 / 1 / 2 / 3;
+
+  @media (max-width: 1440px) {
+    grid-area: 2 / 1 / 3 / 3;
+    min-height: 450rem;
+  }
+
+  @media (max-width: 576px) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+}
+
+.landing__2 {
+  grid-area: 2 / 1 / 3 / 2;
+  max-height: 383rem;
+
+  @media (max-width: 1440px) {
+    grid-area: 3 / 1 / 4 / 2;
+    min-height: 275rem;
+  }
+
+  @media (max-width: 576px) {
+    grid-area: 3 / 1 / 4 / 2;
+    min-height: auto;
+    height: auto;
+    max-height: none;
+  }
+}
+
+.landing__3 {
+  grid-area: 2 / 2 / 3 / 3;
+  max-height: 383rem;
+
+  @media (max-width: 1440px) {
+    grid-area: 3 / 2 / 4 / 3;
+    min-height: 275rem;
+  }
+
+  @media (max-width: 576px) {
+    grid-area: 4 / 1 / 5 / 2;
+    min-height: auto;
+  }
+}
+
+.landing__4 {
+  height: 920rem;
+
+  grid-area: 1 / 3 / 3 / 6;
+
+  @media (max-width: 1440px) {
+    grid-area: 1 / 1 / 2 / 3;
+    max-height: 750rem;
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (max-width: 576px) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+}
+
+.refresh {
+  text-align: center;
+  margin-top: 20rem;
+}

@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+.temperature {
+  border-radius: $border-radius;
+  outline: 1rem solid $color-black;
+  padding: 70rem 100rem;
+
+  h2 {
+    font-size: 100rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  h4 {
+    font-size: 40rem;
+    font-weight: 700;
+    margin: 10rem 0 68rem;
+  }
+
+  @media (max-width: 1440px) {
+    padding: 50rem 35rem;
+  }
+
+  @media (max-width: 576px) {
+    border-radius: 0;
+    outline: none;
+  }
+}
+
+.satisfied {
+  background: $gradient-green;
+}
+
+.unsatisfied {
+  background: $gradient-red;
+}
+
+.warning {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 200, 0, 0.6) 100%);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start;
+}
+

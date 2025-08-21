@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  outline: 1rem solid $color-black;
+
+  border-radius: $border-radius;
+  position: relative;
+
+  &__image {
+    position: absolute;
+    height: 80%;
+    aspect-ratio: 1 / 1;
+    z-index: -1;
+    top: 100%;
+    left: 100%;
+    transform: translate(-85%, -85%);
+  }
+
+  @media (max-width: 1024px) {
+    height: 485rem;
+    width: 100%;
+  }
+
+  @media (max-width: 576px) {
+    min-height: 355rem;
+    border-radius: 0;
+    outline: none;
+  }
+}

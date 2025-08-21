@@ -1,0 +1,16 @@
+$border-radius: 20rem;
+
+$color-green: #7affa7;
+$color-red: #ff8a7a;
+$color-black: #000000;
+$color-white: #ffffff;
+$gradient-green: linear-gradient(
+  135deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(0, 255, 87, 0.6) 100%
+);
+$gradient-red: linear-gradient(
+  135deg,
+  rgba(255, 255, 255, 0) 0%,
+  $color-red 100%
+);
