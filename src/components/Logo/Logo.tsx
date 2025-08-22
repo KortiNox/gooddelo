@@ -9,7 +9,7 @@ interface IProps {
 const Logo: FunctionComponent<IProps> = ({ className }) => {
   return (
     <div className={cn(styles.logo, className)}>
-      <img src="/logo.svg" alt="Логотип" className={styles.logo__image} />
+      <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Логотип" className={styles.logo__image} />
     </div>
   );
 };
